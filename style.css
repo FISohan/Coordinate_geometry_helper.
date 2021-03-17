@@ -1,0 +1,65 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background: #0095B6;
+}
+canvas{
+  
+  transition: all ease-in 100ms;
+  background: white;
+  box-shadow: #424246 -5px -3px 15px, #A6A7B0 5px 3px 10px;
+}
+canvas:hover{
+  box-shadow: #424246 5px 3px 15px, #626366 -15px -5px 25px;
+}
+button{
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+input{
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background: #C0C0C0
+}
+.top-bar{
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+#shapeInfo{
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  margin-left: 7.5%;
+  background-color: #9EB9D4;
+  max-height: 30%;
+  width: 85%;
+  box-shadow: #424246 5px 3px 10px;
+  font-size: 18px;
+}
+
+.title{
+  margin-top: -15px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+}
+.titles{
+  font-weight: 400;
+  color:  #00BFFF;
+  text-shadow: 3px 3px 5px #2E2E37;
+}
+.point{
+  width: 40%;
+}

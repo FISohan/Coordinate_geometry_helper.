@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2 style="text-align: center" class="titles">Coordinate Geometry helper</h2>
+  <br />
+  <canvas id="canvas">
+  </canvas>
+  <div class="top-bar">
+    <button type="submit" style="background: #FF033E" onclick="init()">Clear</button>
+    <input type="text" id="point" disabled placeholder="disabled! please click Clear to enable🙂" />
+    <button type="submit" style="background: #03C03C" onclick="undo()">Undo</button>
+  </div>
+  <div id="shapeInfo">
+    <div class="title">
+      <span style="border-bottom: 2px solid #0095B6">Info of shape:-</span>
+    </div>
+    <div class="text-box" style="font-size: 15px">
+      Shape Name : <span id="name"></span><br />
+      Shape Area : <span id="area">😉</span><br />
+      <br />
+      <div class="title"> <span style="font-size: 20px;border-bottom: 2px solid #0095B6;margin-top: 25px">Info Between :-</span> </div>
+      <label for="Enter two point name">Enter two point name:</label>
+      <br />
+      <input type="text" name="somename"
+      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+      
+      maxlength = "2" class="point" id="pointName"  placeholder="AB" />
+      
+      <br />
+      Distance  : <span id="distance">😉</span><br />
+      Slope : <span id="slope">😉</span><br />
+      Angle : <span id="angle">😪</span><br />
+      Equation : <span id="equation">😉</span><br />
+    </div>
+    <br />
+    <h4><span style="border-top: 1px solid white;border-bottom: 1px solid white ">A Loser creation</span></h4>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
